@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Rackspace</display-name>
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/JSP/JSP.jsp</welcome-file>
+   
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>Myservlet</servlet-name>
+  <servlet-class>com.rackspace.servlet.LoginServlet</servlet-class>
+   </servlet>
+  
+  
+  <servlet-mapping>
+  <servlet-name>Myservlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Home</servlet-name>
+  <jsp-file>/WEB-INF/JSP/home.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Home</servlet-name>
+  <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Error</servlet-name>
+  <jsp-file>/WEB-INF/JSP/error.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Error</servlet-name>
+  <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Registration</servlet-name>
+  <servlet-class>com.rackspace.servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Registration</servlet-name>
+  <url-pattern>/RegServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+ <servlet-name>Registra</servlet-name> 
+ <jsp-file>/WEB-INF/JSP/Reg.jsp</jsp-file>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>Registra</servlet-name> 
+ <url-pattern>/Register</url-pattern>
+ </servlet-mapping> 
+ 
+ <servlet>
+ 
+ <servlet-name>Customer</servlet-name>
+ <servlet-class>com.rackspace.servlet.CustomerServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>Customer</servlet-name>
+ <url-pattern>/CustomerServlet</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>Details</servlet-name>
+ <jsp-file>/WEB-INF/JSP/Customer.jsp</jsp-file>
+ </servlet>
+  <servlet-mapping>
+  <servlet-name>Details</servlet-name>
+  <url-pattern>/CustomerDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Updatecust</servlet-name>
+  <jsp-file>/WEB-INF/JSP/Update.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Updatecust</servlet-name>
+  <url-pattern>/UpdateCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Updateuser</servlet-name>
+  <servlet-class>com.rackspace.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  
+<servlet-mapping>
+<servlet-name>Updateuser</servlet-name>
+<url-pattern>/UpdateServlet</url-pattern>
+</servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
